@@ -1,4 +1,8 @@
-// app/blog/layout.jsx - simplified since we now use MainLayout component
+// app/blog/layout.jsx - A layout specifically for the blog section
 export default function BlogLayout({ children }) {
-  return children;
+  return (
+    <div className="bg-brandGray-50 dark:bg-brandGray-950 min-h-screen">
+      {children}
+    </div>
+  );
 }
