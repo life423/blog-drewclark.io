@@ -1,0 +1,81 @@
+/**
+ * Color Usage Guidelines
+ * 
+ * This file serves as documentation for how colors should be applied
+ * throughout the site based on color theory principles.
+ */
+
+/**
+ * Primary Color: brandGreen
+ * Used for:
+ * - Main action buttons
+ * - Navigation active states
+ * - Focus states
+ * - Important brand elements
+ * 
+ * Light mode: brandGreen-600 (#059669) for text on light backgrounds
+ * Dark mode: brandGreen-400 (#34D399) for text on dark backgrounds
+ * 
+ * Example classes:
+ * .text-primary { @apply text-brandGreen-600 dark:text-brandGreen-400; }
+ * .bg-primary { @apply bg-brandGreen-500; }
+ * .border-primary { @apply border-brandGreen-500; }
+ */
+
+/**
+ * Accent Color: neonOrange
+ * Used sparingly for:
+ * - Call-to-action buttons
+ * - Important highlights
+ * - Attention-grabbing elements
+ * 
+ * Example classes:
+ * .text-accent { @apply text-neonOrange-600 dark:text-neonOrange-400; }
+ * .bg-accent { @apply bg-neonOrange-500; }
+ * .border-accent { @apply border-neonOrange-500; }
+ */
+
+/**
+ * Secondary Color: brandBlue
+ * Used for:
+ * - Links
+ * - Secondary buttons
+ * - Supporting UI elements
+ * - Information messages
+ * 
+ * Example classes:
+ * .text-secondary { @apply text-brandBlue-600 dark:text-brandBlue-400; }
+ * .bg-secondary { @apply bg-brandBlue-500; }
+ * .border-secondary { @apply border-brandBlue-500; }
+ */
+
+/**
+ * Neutral Colors: brandGray
+ * Used for:
+ * - Text (ensuring proper contrast)
+ * - Backgrounds
+ * - Borders
+ * - Structural elements
+ * 
+ * Text on light backgrounds: brandGray-800 (#27272A) or darker
+ * Text on dark backgrounds: brandGray-200 (#E4E4E7) or lighter
+ * 
+ * Example classes:
+ * .text-body-light { @apply text-brandGray-800; }
+ * .text-body-dark { @apply text-brandGray-200; }
+ * .border-subtle { @apply border-brandGray-200 dark:border-brandGray-800; }
+ * .bg-subtle { @apply bg-brandGray-100 dark:bg-brandGray-800; }
+ */
+
+/**
+ * Contrast Compliance
+ * 
+ * - All text must meet WCAG AA standards (minimum 4.5:1 for normal text)
+ * - Interactive elements need at least 3:1 contrast with surroundings
+ * - Focus states must be clearly visible
+ * 
+ * Recommended pairings:
+ * - Dark text (brandGray-800+) on light backgrounds (white, brandGray-50/100)
+ * - Light text (brandGray-200-) on dark backgrounds (brandGray-800/900)
+ * - Use the brandGreen-600 on light backgrounds and brandGreen-400 on dark backgrounds
+ */

@@ -15,7 +15,7 @@ const NavLink = ({ href, label }) => {
       className={`relative px-1 py-2 text-lg font-medium transition-colors duration-200 ${
         isActive 
           ? 'text-brandGreen-600 dark:text-brandGreen-400' 
-          : 'text-brandGray-700 dark:text-brandGray-300 hover:text-brandGreen-500 dark:hover:text-brandGreen-400'
+          : 'text-brandGray-800 dark:text-brandGray-200 hover:text-brandGreen-500 dark:hover:text-brandGreen-400'
       }`}
     >
       {label}
@@ -38,7 +38,7 @@ const MobileNavLink = ({ href, label, onClick }) => {
       className={`block px-4 py-3 text-base font-medium rounded-md transition-colors duration-200 ${
         isActive 
           ? 'bg-brandGreen-100 dark:bg-brandGreen-900/30 text-brandGreen-700 dark:text-brandGreen-400' 
-          : 'text-brandGray-700 dark:text-brandGray-300 hover:bg-brandGray-100 dark:hover:bg-brandGray-800'
+          : 'text-brandGray-800 dark:text-brandGray-200 hover:bg-brandGray-100 dark:hover:bg-brandGray-800'
       }`}
     >
       {label}
@@ -86,9 +86,7 @@ export default function Navbar() {
             <NavLink href="/blog" label="Blog" />
             <NavLink href="/theme" label="Theme" />
             <NavLink href="/contact" label="Contact" />
-            <button className="px-4 py-2 rounded-md bg-neonOrange-500 hover:bg-neonOrange-600 text-white transition-colors">
-              Subscribe
-            </button>
+            {/* Removed subscribe button that had no functionality */}
           </nav>
           
           {/* Mobile Menu Button - visible only on mobile */}
@@ -127,11 +125,6 @@ export default function Navbar() {
           <MobileNavLink href="/blog" label="Blog" onClick={() => setMobileMenuOpen(false)} />
           <MobileNavLink href="/theme" label="Theme" onClick={() => setMobileMenuOpen(false)} />
           <MobileNavLink href="/contact" label="Contact" onClick={() => setMobileMenuOpen(false)} />
-          <div className="px-4 py-3">
-            <button className="w-full py-2 px-4 rounded-md bg-neonOrange-500 hover:bg-neonOrange-600 text-white font-medium transition-colors">
-              Subscribe
-            </button>
-          </div>
         </div>
       </div>
     </header>
